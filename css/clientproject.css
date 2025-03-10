@@ -1,0 +1,144 @@
+h1 {
+    font-size: large;
+    font-family: 'Merriweather', serif;
+    color: blue;
+    background-color: #FFCC00;
+    border:solid 1px white;
+    font-size: x-large;
+}
+
+h2 {
+    background-color: #FFCC00;
+    font-size: large;
+    border: solid 10px 10px 10px white;
+}
+
+.UMSI{
+    font-size: x-large;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #00274C;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a[href=""] {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #ffcc00;
+    color: black;
+    padding: 8px;
+    z-index: 100;
+}
+
+a[href=""]:focus {
+    top: 10px;
+}
+
+main {
+    padding: 2rem;
+    margin: auto;
+    background: white;
+}
+
+h1, h2, h3, h4 {
+    color: darkblue;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: lightgray;
+    border-radius: 5px;
+}
+
+article {
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    background: #00274C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+#title-three {
+    color: black;
+}
+
+#page_2_h3, #page_3_h3 {
+    background-color: #FFCC00;
+    font-size: large;
+    border: solid 10px 10px 10px white;
+}
+
+
+
