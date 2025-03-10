@@ -62,7 +62,7 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-a[href=""] {
+.skip {
     position: absolute;
     top: -40px;
     left: 0;
@@ -72,7 +72,7 @@ a[href=""] {
     z-index: 100;
 }
 
-a[href=""]:focus {
+.skip:focus {
     top: 10px;
 }
 
