@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/clientproject.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Student Success Portal</title>
+</head>
+<body>
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        <img src="images/umsi2.jpeg" alt="UMSISchool2">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="umsi.html">Welcome to UMSI</a></li>
+                <li><a href="firstgen.html">First Generation Students</a></li>
+                <li><a href="pantry.html">Maize and Blue Cupboard</a></li>
+            </ul>
+        </nav>
+        <h1>Student Success Portal</h1>
+    
+    </header>
+    <main id="main">
+        <section class="error-container">
+            <h2>404 - Page Not Found</h2>
+            <p>Oops! The page you're looking for doesn't exist anymore or has been moved!</p>
+            <p>Here are some helpful links below!</p>
+            <ul class="error-links">
+                <li><a href="index.html">Return to Homepage</a></li>
+                <li><a href="umsi.html">UMSI Resources</a></li>
+                <li><a href="firstgen.html">First Generation Support</a></li>
+                <li><a href="pantry.html">Maize and Blue Cupboard</a></li>
+            </ul>
+            <button id="reportButton" class="report-btn">Report This Issue</button>
+            <div id="reportForm" class="report-form-container" style="display: none;">
+                <form id="errorReportForm" action="https://formspree.io/f/mwplnaqk" method="POST">
+                    <fieldset>
+                        <legend>Report 404 Error</legend>
+                        <label for="error_count">How many times have you encountered this error?</label>
+                        <select id="error_count" name="error_count" required>
+                            <option value="">Select...</option>
+                            <option value="1">First time</option>
+                            <option value="2">2-3 times</option>
+                            <option value="4">4-5 times</option>
+                            <option value="6">More than 5 times</option>
+                        </select>
+                        
+                        <label for="error_details">Additional Details (optional):</label>
+                        <textarea id="error_details" name="error_details" placeholder="Describe how you encountered this error..."></textarea>
+                        
+                        <div class="form-buttons">
+                            <input type="submit" value="Submit Report">
+                            <button type="button" id="cancelReport">Cancel</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                <p>Thank you for reporting this issue! We'll work to fix it as soon as possible.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Student Success Portal | <a href="https://www.si.umich.edu/student-experience/academic-success">University Student Resources</a></p>
+        <p>Make an Advising Appointment | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Schedule Here</a></p>
+        <p>Wellness Resources | <a href="https://wellbeing.studentlife.umich.edu/">Student Well-Being</a></p> 
+        <p>UMSI Instagram | <a href="https://www.instagram.com/umschoolofinformation/">UMSI Instagram</a></p>
+        <br>
+        <p>© Copyright <span id="year"></span> Regents of the University of Michigan <br>
+            School of Information,
+            University of Michigan,
+            105 S State St.
+            Ann Arbor, MI 48109-1285
+        </p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', function() {
+            reportButton = document.getElementById('reportButton');
+            reportForm = document.getElementById('reportForm');
+            cancelButton = document.getElementById('cancelReport');
+            thankYouMessage = document.getElementById('thankYouMessage');
+            errorForm = document.getElementById('errorReportForm');
+            
+            reportButton.addEventListener('click', function() {
+                reportForm.style.display = 'block';
+                reportButton.style.display = 'none';
+            });
+            
+            cancelButton.addEventListener('click', function() {
+                reportForm.style.display = 'none';
+                reportButton.style.display = 'block';
+            });
+            
+            errorForm.addEventListener('submit', function() {
+                reportForm.style.display = 'none';
+                thankYouMessage.style.display = 'block';
+                reportButton.style.display = "nonel";
+            });
+        });
+    </script>
+
+
+</body>
+</html>

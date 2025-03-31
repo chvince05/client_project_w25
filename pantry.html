@@ -10,20 +10,20 @@
 <body>
     <header>
         <a class = "skip" href = "#main">Skip to Main Content</a>
-        <img src="images/maizeandbluelogo2.jpeg" alt="PantryLogo">
+        <img src="images/umsi2.jpeg" alt="PantryLogo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page_1.html">Welcome to UMSI</a></li>
-                <li><a href="page_2.html">First Generation Students</a></li>
-                <li><a href="page_3.html">Maize and Blue Cupboard</a></li>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "umsi.html">Welcome to UMSI</a></li>
+                <li><a href = "firstgen.html">First Generation Students</a></li>
+                <li><a href="pantry.html" class="current">Maize and Blue Cupboard</a></li>
             </ul>
         </nav>
         <h1> The Best Food Pantry at University of Michigan</h1>
     </header>
     <main id = "main">
         <section>
-            <h2>What is our Mission?</h2>
+            <h2 id = "pantry_h2">What is our Mission?</h2>
             <p>Our Mission Here at the Maize and Blue Cupboard is to ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p>
             <img src="images/maizeandblue2.jpeg" alt="MaizenBlueV2">
             <p>Here at the Maize and Blue Cupboard we have a lot of resources that anyone of all ages can use whether it be utensils or groceries! We restock our supplies every Monday, Wednesday, and Thursday! Come make an appointment now, take as much groceries as you need but make sure to leave some for others too! Make sure to arrive on time for your appointment because spots are limited!!</p>
@@ -31,7 +31,7 @@
             <p>Follow our Instagram Page To Keep Yourself Updated on Latest Maize and Blue Cupboard News!</p>
         </section>
         <section id = "AvailabilityandContact">
-            <h3 id = "page_3_h3">Our Availability and Contact Information</h3>
+            <h3 id = "pantry_h3">Our Availability and Contact Information</h3>
             <ul>
                 <li><strong>Hours of Operation: </strong> Monday-Thursday: 3PM - 7PM, Friday: 12PM - 7PM, Saturday: Closed, Sunday: 2PM - 6PM</li>
                 <li><strong>Address:  </strong> 420 S State St, Ann Arbor, Michigan 48109</li>
@@ -40,11 +40,21 @@
         </section>
     </main>
     <footer>
-        <p>Maize and Blue Cupboard | <a href="https://mbc.studentlife.umich.edu/">Maize and Blue Cupboard</a></p>
-        <p>Maize and Blue Cupboard Appointments | <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2025-01">Make an Appointment Today!</a></p>
-        <p>Maize and Blue Cupboard Instagram | <a href="https://www.instagram.com/maizeandbluecupboard/">Maize and Blue Cupboard Instagram</a></p>
-        <p>Maize and Blue Cupboard Facebook | <a href="https://www.facebook.com/maizeandbluecupboard/">Maize and Blue Cupboard Facebook</a></p>
-        <p>Maize and Blue Cupboard Twitter | <a href="https://x.com/umichcupboard">Maize and Blue Cupboard Twitter</a></p>
+        <p>Student Success Portal | <a href="https://www.si.umich.edu/student-experience/academic-success">University Student Resources</a></p>
+        <p>Make an Advising Appointment | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Schedule Here</a></p>
+        <p>Wellness Resources | <a href="https://wellbeing.studentlife.umich.edu/">Student Well-Being</a></p> 
+        <p>UMSI Instagram | <a href="https://www.instagram.com/umschoolofinformation/">UMSI Instagram</a></p>
+
+        <br>
+        <p>© Copyright <span id="year"></span> Regents of the University of Michigan <br>
+            School of Information,
+            University of Michigan,
+            105 S State St.
+            Ann Arbor, MI 48109-1285
+        </p>
     </footer>
+    <script> //Inspiration From https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

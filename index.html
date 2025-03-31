@@ -8,16 +8,15 @@
     <title>Student Success Portal</title>
 </head>
 <body>
-
     <header>
   <a class = "skip" href = "#main">Skip to Main Content</a>
         <img src="images/umsi2.jpeg" alt="UMSISchool2">
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Welcome to UMSI</a></li>
-                <li><a href = "page_2.html">First Generation Students</a></li>
-                <li><a href = "page_3.html">Maize and Blue Cupboard</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href = "umsi.html">Welcome to UMSI</a></li>
+                <li><a href = "firstgen.html">First Generation Students</a></li>
+                <li><a href = "pantry.html">Maize and Blue Cupboard</a></li>
             </ul>
         </nav>
         <h1>Student Success Portal</h1>
@@ -37,7 +36,7 @@
             </ul>
         </section>
         <section>
-            <h2>Physical Health</h2>
+            <h2 id = "indexh2">Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article>
                 <h3>University Health Service (UHS)</h3>
@@ -58,7 +57,7 @@
         </section>
         
         <section>
-            <h2>Mental Health</h2>
+            <h2 id = "indexh2">Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
             <article>
                 <h3>Counseling and Psychological Services (CAPS):</h3>
@@ -83,7 +82,7 @@
 
         
         <section id="life-outside-classroom">
-            <h2>Life Outside the Classroom</h2>
+            <h2 id = "indexh2">Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
             <ul>
                 <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
@@ -96,8 +95,21 @@
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+    <footer> <!-- Inspiration From https://www.si.umich.edu/student-experience/academic-success-->
+        <p>Student Success Portal | <a href="https://www.si.umich.edu/student-experience/academic-success">University Student Resources</a></p>
+        <p>Make an Advising Appointment | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Schedule Here</a></p>
+        <p>Wellness Resources | <a href="https://wellbeing.studentlife.umich.edu/">Student Well-Being</a></p> 
+        <p>UMSI Instagram | <a href="https://www.instagram.com/umschoolofinformation/">UMSI Instagram</a></p>
+        <br>
+        <p>© Copyright <span id="year"></span> Regents of the University of Michigan <br>
+            School of Information,
+            University of Michigan,
+            105 S State St.
+            Ann Arbor, MI 48109-1285
+        </p>
+    </footer>
+    <script> //Inspiration From https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
