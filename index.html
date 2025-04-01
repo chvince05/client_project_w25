@@ -83,30 +83,31 @@
         
         <section id="life-outside-classroom">
             <h2 id = "indexh2">Life Outside the Classroom</h2>
-            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom.</p>
             <ul>
                 <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
-                <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
                 <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
-                <li><strong>Community Engagement:</strong> Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
                 <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
             </ul>
         </section>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
-    <footer> <!-- Inspiration From https://www.si.umich.edu/student-experience/academic-success-->
-        <p>Student Success Portal | <a href="https://www.si.umich.edu/student-experience/academic-success">University Student Resources</a></p>
-        <p>Make an Advising Appointment | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Schedule Here</a></p>
-        <p>Wellness Resources | <a href="https://wellbeing.studentlife.umich.edu/">Student Well-Being</a></p> 
-        <p>UMSI Instagram | <a href="https://www.instagram.com/umschoolofinformation/">UMSI Instagram</a></p>
-        <br>
-        <p>© Copyright <span id="year"></span> Regents of the University of Michigan <br>
-            School of Information,
-            University of Michigan,
-            105 S State St.
-            Ann Arbor, MI 48109-1285
-        </p>
+    <footer>
+        <div class = "footer-top">
+            <p>Student Success Portal | <a href="https://www.si.umich.edu/student-experience/academic-success">University Student Resources</a></p>
+            <p>Make an Advising Appointment | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Schedule Here</a></p>
+            <p>Wellness Resources | <a href="https://wellbeing.studentlife.umich.edu/">Student Well-Being</a></p> 
+            <p>UMSI Instagram | <a href="https://www.instagram.com/umschoolofinformation/">UMSI Instagram</a></p>
+        </div>
+        <div class = "footer-bottom">
+            <p id = "copyright">© Copyright <span id="year"></span> Regents of the University of Michigan <br>
+                School of Information,
+                University of Michigan,
+                105 S State St.
+                Ann Arbor, MI 48109-1285
+            </p>
+        </div>
     </footer>
     <script> //Inspiration From https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
         document.getElementById("year").innerHTML = new Date().getFullYear();
