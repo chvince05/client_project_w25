@@ -6,3 +6,4 @@ UMSI Source: https://www.si.umich.edu/programs
 Maize and Blue Source: https://mbc.studentlife.umich.edu/
 GetYear Source: https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/
 DomContentLoaded Source: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+404 Page Source: https://brndle.com/minimal-html-404-page-simple-effective-friendly/
